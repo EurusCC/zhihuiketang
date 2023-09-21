@@ -1,0 +1,564 @@
+.box {
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    background-color: #fff;
+
+}
+
+.box1 {
+    width: 360px;
+    height: 150px;
+    /* background-color: pink; */
+    position: absolute;
+    left: 130px;
+    /* top: 180px; */
+    animation: slideIn1 2s forwards;
+    opacity: 0;
+
+}
+
+.box1>p {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.box1>span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.box3 {
+    width: 716px;
+    height: 496px;
+    position: absolute;
+    right: 43px;
+    /* top: 69px; */
+    background: url(../img/aboutUsIMG.png) no-repeat;
+    animation: slideIn 2s forwards;
+    opacity: 0;
+}
+
+@keyframes slideIn1 {
+    0% {
+        bottom: 0px;
+        /* 初始位置在页面底部 */
+        opacity: 0;
+        /* 初始透明度为0 */
+    }
+
+    100% {
+        bottom: 260px;
+        /* 最终位置在页面顶部 */
+        opacity: 1;
+        /* 透明度为1 */
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        bottom: 0px;
+        /* 初始位置在页面底部 */
+        opacity: 0;
+        /* 初始透明度为0 */
+    }
+
+    100% {
+        bottom: 90px;
+        /* 最终位置在页面顶部 */
+        opacity: 1;
+        /* 透明度为1 */
+    }
+}
+
+.nav ul>li:nth-of-type(2) a {
+    color: rgb(61, 142, 240) !important;
+}
+
+/* 了解我们的项目 */
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 64px;
+}
+
+/* 软件外包流程四个 */
+.bg1 {
+    width: 100%;
+    background: url(../img/features.30cee631.jpg) no-repeat;
+    overflow: hidden;
+}
+
+.box4 {
+    margin: 50px auto;
+    margin-bottom: 0;
+    height: 205px;
+    overflow: hidden;
+
+}
+
+/* libiankuang */
+.flot>ul>li {
+    float: left;
+    width: 230px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 19px;
+    /* background-color: green; */
+    text-align: center;
+    /* color: #7bcff5; */
+
+}
+
+.swiper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 420px;
+
+    /* --swiper-pagination-color: #fcfcfc; */
+    --swiper-theme-color: #f1f5f2;
+
+
+    /* 设置Swiper风格 */
+    /* 分页器的颜色 */
+
+    --swiper-navigation-color: #f4f3f0;
+    /* 单独设置按钮颜色 */
+    --swiper-navigation-size: 10px;
+    /* 设置按钮大小 */
+
+}
+
+.prev {
+    width: 40px !important;
+    height: 40px !important;
+    position: absolute !important;
+    left: 30px !important;
+    top: 240px !important;
+}
+
+.next {
+    width: 40px !important;
+    height: 40px !important;
+    position: absolute !important;
+    right: 30px !important;
+    top: 240px !important;
+
+}
+
+/* 箭头悬浮显示 */
+.swiper1 .hide {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.swiper1:hover .swiper-button-next {
+    opacity: 1;
+    transition: all .5s;
+    transform: translateX(-10px);
+}
+
+.swiper1:hover .swiper-button-prev {
+    opacity: 1;
+    transition: all .5s;
+    transform: translateX(10px);
+}
+
+/* 分页器设置长条 */
+.swiper .my-bullet {
+    display: inline-block;
+    /* float: left; */
+    width: 30px;
+    height: 2px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    background-color: #8888896d;
+    /* position: absolute;
+    bottom: 20px; */
+
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    background-color: transparent;
+}
+
+.swiper .my-bullet-active {
+    background-color: white;
+}
+
+.swiper-slide {
+    height: 420px;
+}
+
+.swiper-slide>img {
+    height: 420px;
+}
+
+/* 当点击时要添加这个属性 */
+.border {
+    color: #7bcff5 !important;
+    border-bottom: 6px solid #1ca8e8;
+}
+
+.flot>ul>li:last-child {
+    background-image: none;
+}
+
+
+.up {
+    width: 20%;
+    height: 80px;
+    float: left;
+    /* margin-left: 1px; */
+    margin-top: 1px;
+    padding: 32px 0;
+    position: relative;
+    text-align: center;
+    position: relative;
+}
+
+.up>div>img:first-child {
+    display: block;
+    /* display: none; */
+    position: absolute;
+    top: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.up>div>img:last-child {
+    display: none;
+    position: absolute;
+    top: 37px;
+    left: 85px;
+    /* transform: translateX(-141%); */
+    transition: all 0.5s linear;
+}
+
+.up>p {
+    font-size: 16px;
+    /* color: #333; */
+    margin: 8px auto;
+    /* margin-top: 80px; */
+    position: absolute;
+    top: 100px;
+    left: 69px;
+
+}
+
+
+
+.up:hover div img:last-child {
+    display: block;
+    transform: translateY(-10px);
+}
+
+
+.up:hover div img:first-child {
+    display: none;
+}
+
+.up:hover p {
+    color: #1f9ee3;
+}
+
+.none {
+    position: relative;
+}
+
+.bg2 {
+    position: relative;
+}
+
+#container {
+    background: url(../img/features.30cee631.jpg);
+}
+
+/* tab切换软件外包部分 */
+.box5 {
+    height: 920px;
+    width: 100%;
+    background-color: #F1F7FD;
+    display: none;
+    /* transform: rotateY(180deg); */
+}
+
+/* 点击消失时添加这个 */
+.active {
+    animation: rotate 0.8s forwards;
+}
+
+
+
+@keyframes rotate {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+
+}
+
+/* 点击出现时添加这个 */
+.active1 {
+    animation: rotate1 0.8s forwards;
+
+}
+
+@keyframes rotate1 {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+
+    20% {
+        opacity: .2;
+        transform: rotateX(100deg);
+        transform-origin: bottom;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+
+}
+
+.box6 {
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 40px;
+    overflow: hidden;
+    padding-right: 40px;
+    /* background-color: yellowgreen; */
+}
+
+.intrduce {
+    width: 900px;
+    float: right;
+    position: relative;
+}
+
+.intrduce:nth-of-type(3) {
+    margin-top: 292px;
+}
+
+.intrduce:last-child .text {
+    border-left: none;
+
+}
+
+.intrduce>p {
+
+    display: inline-block;
+    font-size: 24px;
+    position: absolute;
+    top: 3px;
+    left: 43px;
+}
+
+.text {
+    padding-left: 42px;
+    border-left: 1px solid #219EE1;
+    position: absolute;
+    left: 19px;
+}
+
+
+
+.text>p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* tab切换视觉识别系统设计部分 */
+.box8 {
+    height: 570px;
+    width: 100%;
+    background-color: #F1F7FD;
+    /* display: none; */
+    /* transform: rotateY(180deg); */
+}
+
+.box8 .intrduce:nth-of-type(2) {
+    margin-top: -96px;
+}
+
+.box8 .intrduce:nth-of-type(3) {
+    margin-top: 38px;
+}
+
+/* tab切换企业解决方案部分 */
+.box9 {
+    height: 400px;
+    width: 100%;
+    background-color: #F1F7FD;
+    color: black;
+    display: none;
+    /* transform: rotateY(180deg); */
+}
+
+.box9 .intrduce:nth-of-type(2) {
+    margin-top: -96px;
+}
+
+/* tab切换移动应用开发部分 */
+.box10 {
+    width: 100%;
+    height: 1500px;
+    background-color: #F1F7FD;
+    color: black;
+    display: none;
+}
+
+.box10 .intrduce:nth-of-type(3) {
+    margin-top: 487px;
+}
+
+/* tab切换软件开发部分 */
+.box11 {
+    width: 100%;
+    height: 590px;
+    background-color: #F1F7FD;
+    color: black;
+    display: none;
+}
+
+.box11 .intrduce:nth-of-type(2) {
+    margin-top: -96px;
+}
+
+.box12 {
+    width: 100%;
+    height: 400px;
+    background-color: #F1F7FD;
+    color: black;
+    display: none;
+}
+
+.box12 .intrduce:nth-of-type(2) {
+    margin-top: -90px;
+}
+
+#duih {
+    width: 60px;
+}
+
+.box13 {
+    width: 100%;
+    height: 670px;
+    background-color: #F1F7FD;
+    color: black;
+    display: none;
+    /* animation: rotate1 0.8s forwards; */
+}
+
+.box13 .intrduce:nth-of-type(2) {
+    margin-top: -100px;
+}
+
+.box13 .intrduce:nth-of-type(3) {
+    margin-top: 62px;
+}
+
+.box13 .intrduce:nth-of-type(4) {
+    margin-top: 74px;
+}
+
+
+/* 轮播图 */
+
+.swiper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 402px;
+
+    /* --swiper-pagination-color: #fcfcfc; */
+    --swiper-theme-color: #f1f5f2;
+
+
+
+
+    /* 设置Swiper风格 */
+    /* 分页器的颜色 */
+
+    --swiper-navigation-color: #f4f3f0;
+    /* 单独设置按钮颜色 */
+    --swiper-navigation-size: 10px;
+    /* 设置按钮大小 */
+
+
+
+
+}
+
+
+
+.swiper-slide>.left {
+    position: absolute;
+    left: 150px;
+    top: 40px;
+}
+
+.swiper-slide>.left>h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.swiper-slide>.left>p {
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+}
+
+.swiper-slide>.left>img {
+    margin-top: 30px;
+}
+
+
+.swiper-slide>.right {
+    width: 730px;
+    height: 350px;
+    /* background-color: #1f9ee3; */
+    position: absolute;
+    right: 150px;
+    top: 40px;
+}
+
+.swiper-slide>.right>h2 {
+    margin-top: 120px;
+    color: white;
+    font-weight: 500;
+    font-size: 24;
+}
+
+.swiper-slide>.right>p {
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 24px;
+}
+
+.swiper-slide>.right>button {
+    width: 88px;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-top: 20px;
+}

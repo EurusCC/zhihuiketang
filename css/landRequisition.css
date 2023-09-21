@@ -1,0 +1,440 @@
+body {
+    background-color: #fff !important;
+
+}
+
+.box {
+    overflow: hidden;
+    position: relative;
+}
+
+.box1 {
+    width: 460px;
+    height: 150px;
+    /* background-color: pink; */
+    position: absolute;
+    left: 130px;
+    /* top: 180px; */
+    animation: slideIn1 2s forwards;
+    opacity: 0;
+
+}
+
+.box1>p {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.box1>span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.box1>a {
+    display: block;
+    width: 88px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    border: 1px solid #fff;
+}
+
+.box3 {
+    width: 716px;
+    height: 496px;
+    position: absolute;
+    right: 30px;
+    /* top: 123px; */
+    background: url(../img/aboutUsIMG.png) no-repeat;
+    background-size: 600px;
+    animation: slideIn 2s forwards;
+
+    opacity: 0;
+    overflow: hidden;
+}
+
+.box3>img {
+    width: 900px;
+    position: absolute;
+    left: -147px;
+    top: -30px;
+}
+
+@keyframes slideIn1 {
+    0% {
+        bottom: 0px;
+        /* 初始位置在页面底部 */
+        opacity: 0;
+        /* 初始透明度为0 */
+    }
+
+    100% {
+        bottom: 260px;
+        /* 最终位置在页面顶部 */
+        opacity: 1;
+        /* 透明度为1 */
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        bottom: -120px;
+        /* 初始位置在页面底部 */
+        opacity: 0;
+        /* 初始透明度为0 */
+    }
+
+    100% {
+        bottom: -20px;
+        /* 最终位置在页面顶部 */
+        opacity: 1;
+        /* 透明度为1 */
+    }
+}
+
+.nav ul>li:nth-of-type(4) a {
+    color: rgb(61, 142, 240) !important;
+}
+
+/* 系统功能 */
+.titl {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.use {
+    height: 145px;
+    /* background-color: rgb(102, 163, 243); */
+}
+
+.item {
+    width: 24%;
+    height: 80px;
+    float: left;
+    /* margin-left: 1px; */
+    margin-top: 1px;
+    padding: 32px 0;
+    position: relative;
+    text-align: center;
+    /* background-color: #b9f2cc; */
+}
+
+.item div img:first-child {
+    display: block;
+    /* display: none; */
+    position: absolute;
+    top: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.item div img:last-child {
+    display: none;
+    position: absolute;
+    top: 37px;
+    left: 124px;
+    /* transform: translateX(-141%); */
+    transition: all 0.5s linear;
+}
+
+.item>p {
+    font-size: 16px;
+    color: #333;
+    margin: 8px auto;
+    margin-top: 80px;
+
+}
+
+.item>span {
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    display: block;
+    width: 340px;
+    margin: 0 auto;
+}
+
+.item:hover div img:last-child {
+    display: block;
+    transform: translateY(-10px);
+}
+
+
+.item:hover div img:first-child {
+    display: none;
+}
+
+.item:hover p {
+    color: #1f9ee3;
+}
+
+.type {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 100PX;
+    background-color: #F1F7FD;
+}
+
+.type p {
+    float: left;
+    line-height: 80px;
+    font-size: 14px;
+    color: #666;
+    margin-right: 64px;
+}
+
+.none {
+    display: none;
+}
+
+.type1 {
+    display: block;
+}
+
+
+
+.color {
+
+    position: absolute;
+    top: 37px;
+    left: 124px;
+}
+
+
+/* 点击消失时添加这个 */
+.active {
+    animation: rotate 0.8s forwards;
+}
+
+@keyframes rotate {
+    0% {
+        opacity: 0;
+        transform: rotateX(0);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+
+
+    }
+
+}
+
+/* 点击出现时添加这个 */
+.active1 {
+    animation: rotate1 0.8s forwards;
+
+}
+
+@keyframes rotate1 {
+    0% {
+        opacity: 0;
+        transform-origin: center;
+        transform: rotate(45deg);
+    }
+
+    20% {
+        opacity: .2;
+        transform: rotateX(100deg);
+        transform-origin: bottom;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+
+}
+
+
+/* 征地拆迁管理解决方案——智慧征地管理平台 */
+.box4 {
+    height: 415px;
+    margin-top: 100px;
+    /* background-color: rgb(198, 236, 246); */
+}
+
+.left2 {
+    width: 720px;
+    height: 285px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.left2>p {
+    margin-top: 60PX;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.left2>p:nth-of-type(2) {
+    margin-top: 30PX;
+}
+
+.left2>span {
+    font-size: 14px;
+    line-height: 28px;
+
+}
+
+.left2>span>a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #7bcff5;
+}
+
+.left2>ul>li {
+    width: 200px;
+    margin-top: 50px;
+}
+
+/* 右边部分 */
+.right2 {
+    width: 400px;
+    height: 360px;
+    /* display: inline-block;
+     */
+    float: left;
+    /* text-indent: 20px; */
+    margin-left: 70px;
+    /* background: url(../img/LandBg1.5a33e3f5.png)no-repeat 0px 99px; */
+    /* background-color: #9be19a; */
+}
+
+.right2>p {
+    font-size: 32px;
+    margin-bottom: 32px;
+    margin-left: 60px;
+}
+
+.right2>span {
+    display: block;
+    margin-left: 25px;
+}
+
+.land {
+    width: 360px;
+    height: 260px;
+    display: block;
+    position: relative;
+    margin-left: 24px;
+    margin-top: 20px;
+    background: url(../img/LandBg1.5a33e3f5.png) no-repeat;
+    background-size: 360px 260px;
+}
+
+.land>img {
+    width: 100px;
+    height: 132px;
+    margin-left: 200px;
+    margin-top: -40px;
+    /* -webkit-transition: all .5s ease; */
+    transition: all .5s ease;
+    /* -webkit-transform: translateX(60px); */
+    transform: translateY(60px);
+}
+
+.land:hover img {
+    transform: translateY(20px);
+}
+
+
+.advantage {
+    width: 100%;
+    height: 624px;
+    min-width: 1200px;
+    background: url(../img/b1.f29e9bb4.png);
+}
+
+
+
+.show {
+    /* width: 100%; */
+    height: 402px;
+    /* background-color: #1f9ee3; */
+    /* margin-top: 760px; */
+    position: relative;
+}
+
+.show>img {
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+.app>img {
+    width: 1920px;
+}
+
+.show>.left {
+    position: absolute;
+    left: 150px;
+    top: 40px;
+
+}
+
+.show>.left>h1 {
+    color: rgb(65, 64, 64);
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.show>.left>p {
+    margin-top: 30px;
+    color: rgb(65, 64, 64);
+    font-size: 16px;
+}
+
+.show>.left>img {
+    margin-top: 30px;
+
+}
+
+
+.show>.right {
+    width: 730px;
+    height: 350px;
+    /* background-color: #1f9ee3; */
+    position: absolute;
+    right: 150px;
+    top: 40px;
+}
+
+.show>.right>h2 {
+    margin-top: 120px;
+    color: rgb(65, 64, 64);
+    font-weight: 500;
+    font-size: 24;
+}
+
+.show>.right>p {
+    color: rgb(65, 64, 64);
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 24px;
+}
+
+.show>.right>button {
+    width: 88px;
+    height: 30px;
+    font-size: 15px;
+    color: rgb(65, 64, 64);
+    background-color: transparent;
+    border: 1px solid rgb(65, 64, 64);
+    margin-top: 20px;
+
+}

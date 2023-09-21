@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./css/headerandbottom.css">
+        <link rel="stylesheet" href="./css/1.index.css">
+    </head>
+
+    <body onload="getIndexHead()">
+        <!-- onload="getIndexHead()" -->
+        <div class="box">
+            <!-- 导航栏 -->
+            <div class="nav ">
+                <div class="nav1 continer">
+                    <a href="./index.html" class="logoa"><img id="logo" src="./img/logo.png" alt=""></a>
+                    <ul class="nav2">
+                        <!-- onload="render" -->
+                        <!-- <li><a href="" class="type1">服务项目</a></li>
+                        <li><a href="" class="type1">羚胜体育</a></li>
+                        <li><a href="" class="type1">征地平台</a></li>
+                        <li><a href="" class="type1">智慧课堂</a></li>
+                        <li><a href="" class="type1">企业动态</a></li>
+                        <li><a href="" class="type1">关于我们</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <!-- 轮播图 -->
+            <div class="swiper swiper1 ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/lbt01.png" alt="">
+                        <div class="title">
+                            <h1>欢迎访问通达智慧</h1>
+                            <span>凡通达於天下者，必有节以传辅之</span>
+                            <span>智，睿者；慧，明者</span>
+                            <button>了解详情</button>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/lbt02.png" alt="">
+                        <div class="title">
+                            <h1>羚羊飞渡，胜在不息</h1>
+                            <span>体育赛事SaaS系统</span>
+                            <span>（软件及服务）</span>
+                            <button>了解详情</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 轮播图的小点点 -->
+                <div class="swiper-pagination chang"></div>
+                <!-- 如果需要导航按钮  前进后退的按钮 -->
+                <div class="swiper-button-prev  prev"></div>
+                <div class="swiper-button-next  next"></div>
+            </div>
+        </div>
+        <!-- 软件外包流程 -->
+        <div class="box2 continer flot">
+            <ul>
+                <li class="up"><img class="icon" src="./img/icon-16.png" alt="" data-original-src="./img/icon-16.png"
+                        data-hover-src="./img/icon-18.png">
+                    <p class="bt">软件外包流程</p>
+                </li>
+                <li class="up"><img class="icon" src="./img/icon-19.png" alt="" data-original-src="./img/icon-19.png"
+                        data-hover-src="./img/icon-20.png">
+                    <p class="bt">数字化校园建设</p>
+                </li>
+                <li class="up"><img class="icon" src="./img/icon-21.png" alt="" data-original-src="./img/icon-21.png"
+                        data-hover-src="./img/icon-22.png">
+                    <p class="bt">企业数字化服务</p>
+                </li>
+                <li class="up"><img class="icon" src="./img/icon-23.png" alt="" data-original-src="./img/icon-23.png"
+                        data-hover-src="./img/icon-24.png">
+                    <p class="bt">微信生态服务</p>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- 羚胜体育介绍 -->
+        <div class="box3 continer ">
+            <!-- 左边 -->
+            <div class="left1">
+                <h1>羚胜体育介绍</h1>
+                <span>企业级管理系统</span>
+                <a href="">
+                    <img src="./img/computer-img.a01c4c31.png" alt="">
+                </a>
+
+            </div>
+            <!-- 右边 -->
+            <div class="right1 flot">
+                <p>体育赛事整体解决方案——羚胜体育</p>
+                <span>
+                    “羚胜体育”为各赛事主办方提供快捷平台，可一键创办赛事官网的前端和后端， 无缝对接移动设备，完美发挥移动互联网优势，满足互联网+赛事的个性化需求，助力“智慧体育”建设。
+                    <a href="">了解更多</a>
+                </span>
+                <ul>
+                    <li><img class="icon" src="./img/icon-25.png" alt="" data-original-src="./img/icon-25.png"
+                            data-hover-src="./img/icon-26.png">
+                        <p>一键创办赛事平台</p>
+                    </li>
+                    <li><img class="icon" src="./img/icon-27.png" alt="" data-original-src="./img/icon-27.png"
+                            data-hover-src="./img/icon-28.png">
+                        <p>大数据分析</p>
+                    </li>
+                    <li><img class="icon" src="./img/icon-29.png" alt="" data-original-src="./img/icon-29.png"
+                            data-hover-src="./img/icon-30.png">
+                        <p>智能管理</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- 征地拆迁管理解决方案——智慧征地管理平台 -->
+        <div class="box4 continer">
+
+            <!-- 左边部分 -->
+            <div class="left2 flot">
+                <p>征地拆迁管理解决方案——智慧征地管理平台</p>
+                <span>该系统以征地拆迁业务流程为核心，使业务流程精细化、一体化、专业化，从而提高工作质量，加强信息化管理。通过大数据挖掘技术进行综合分析，
+                    使征地、拆迁、安置形成闭环，为领导决策提供科学依据，解决征地拆迁痛点，有效保障拆迁户利益，稳定社会秩序。
+                    <a href="">了解更多</a>
+                </span>
+
+                <ul>
+                    <li><img class="icon" src="./img/icon-31.png" alt="" data-original-src="./img/icon-31.png"
+                            data-hover-src="./img/icon-32.png">
+                        <p>一键创办赛事平台</p>
+                    </li>
+                    <li><img class="icon" src="./img/icon-33.png" alt="" data-original-src="./img/icon-33.png"
+                            data-hover-src="./img/icon-34.png">
+                        <p>大数据分析</p>
+                    </li>
+                    <li><img class="icon" src="./img/icon-35.png" alt="" data-original-src="./img/icon-35.png"
+                            data-hover-src="./img/icon-36.png">
+                        <p>智能管理</p>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- 右边部分 -->
+            <div class="right2">
+                <p>了解智慧征地平台</p>
+                <span>企业级管理系统</span>
+                <a href="" class="land"><img src="./img/landBg2.e5ebc7aa.png" alt=""></a>
+
+            </div>
+
+        </div>
+        <!-- 翻转图 -->
+
+        <div class="box5 continer">
+            <div class="swiper swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <ul class="pic">
+                            <li cla>
+                                <p class="brand">花溪大学城管委会</p>
+                                <img src="./img/DXC.f30270f3.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">贵州省扶贫基金会</p>
+                                <img src="./img/FPJJH.67a4262a.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">贵阳国际马拉松管委会</p>
+                                <img src="./img/MLS.4a8ea18d.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">党武政府</p>
+                                <img src="./img/DWZF.74b5da65.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">中国移动-贵州</p>
+                                <img src="./img/YDGZ.3b43e565.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">阿里巴巴</p>
+                                <img src="./img/ALBB.064d1108.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">天厦地产</p>
+                                <img src="./img/DXZC.dadf083d.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">六盘水市人民政府</p>
+                                <img src="./img/LPS.4904d49b.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">毕节市人民政府</p>
+                                <img src="./img/BJ.1b9280d9.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">贵州大学</p>
+                                <img src="./img/GZDX.0796bd60.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">华胜天成</p>
+                                <img src="./img/HSTC.2728debd.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">小牛学堂</p>
+                                <img src="./img/XLKT.f5c29954.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand"> 国人通信</p>
+                                <img src="./img/GRTX.9f4e6f27.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">贵安创谷</p>
+                                <img src="./img/GACG.96dc68f8.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">软通动力</p>
+                                <img src="./img/RTDL.07c2ee67.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">钉钉</p>
+                                <img src="./img/DD.c585aed8.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">花小童</p>
+                                <img src="./img/HXT.f59d1375.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">闪电喵喵</p>
+                                <img src="./img/SDMM.2f73dced.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">万科地产</p>
+                                <img src="./img/WKDC.acd03145.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">黔东南洲人民政府</p>
+                                <img src="./img/QDNZF.5f199327.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">软为信息</p>
+                                <img src="./img/RW.2ab482b1.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">uc优视</p>
+                                <img src="./img/US.25718bd5.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">今日头条</p>
+                                <img src="./img/TT.6cb9f1ea.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">贵州省气象局</p>
+                                <img src="./img/QXJ.b32128a5.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="pic pic1">
+                            <li>
+                                <p class="brand">视源股份CVTE</p>
+                                <img src="./img/Seewo.058d49ad.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">贵州省扶贫基金会</p>
+                                <img src="./img/SFP.3e7bb233.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">贵州理工学院</p>
+                                <img src="./img/LG.d8ecc360.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">贵州民族大学</p>
+                                <img src="./img/MD.884ba2b2.png" alt="">
+                            </li>
+                            <li>
+                                <p class="brand">毕节幼儿师范高等专科学校</p>
+                                <img src="./img/BJYS.104cdf20.png" alt="">
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- 如果需要分页器  ...就是分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 如果需要导航按钮 左右的按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- 近期动态 -->
+        <div class="box6 continer">
+            <div class="left3">
+                <p>近期动态</p>
+                <div class="ai">
+                    <p>人们以谈论VR为时髦却有一个人笑了</p>
+                    <span>2018年5月18日</span>
+                    <a href=""><span>了解更多</span>
+                        <img src="./img/rightmb.png" alt="">
+                    </a>
+                </div>
+                <img src="./img/jqdt.png" alt="">
+
+            </div>
+            <div class="right3">
+                <div class="top1"><img src="./img/you.png" alt="">
+                    <p>查看全部</p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">招聘教育信息化培训讲师</a>
+                        <span>2019年06月13日</span>
+                    </li>
+                    <li>
+                        <a href="">招聘H5游戏开发工程师</a>
+                        <span>2019年01月08日</span>
+                    </li>
+                    <li>
+                        <a href="">招聘党政编辑</a>
+                        <span>2018年09月20日</span>
+                    </li>
+                </ul>
+
+
+
+            </div>
+
+
+        </div>
+
+        <!-- 底部 -->
+        <div class="box7">
+            <div class="box8 continer">
+                <!-- 通达智慧介绍 -->
+                <div class="item1">
+                    <h2>通达智慧介绍</h2>
+                    <p>通达智慧将“超越技术”作为公司的经营思想和品牌承诺，以软件技术为核心，始终坚持“开放式创新”战略，对内建立公司级、事业部级的两级研发体系，不断寻找可持续高速发展的技术与商业模式。</p>
+                </div>
+                <div class="item1 item2">
+                    <h2>关于我们</h2>
+                    <a href="">公司简介</a>
+                    <a href="">加入我们</a>
+                    <a href="">新闻动态</a>
+                    <a href="">联系我们</a>
+                </div>
+                <div class="item1 item3">
+                    <h2>解决方案</h2>
+                    <a href="">羚胜体育赛事SaaS系统</a>
+                    <a href="">征收安置大数据管理平台</a>
+                    <a href=""> 高校网上事务服务大厅</a>
+                    <a href="">智慧公益信息化平台</a>
+                </div>
+                <div class=" item1 item4">
+                    <h2>相关网站</h2>
+                    <a href="">羚盛体育服务平台</a>
+                </div>
+                <div class="item1 item5">
+                    <h2>微信公众号</h2>
+                    <img src="./img/ewm.png" alt="">
+                </div>
+
+
+
+            </div>
+            <div class="line"></div>
+            <div class="box9 continer">
+                Copyright © 2016-2023 www.tdin360.com All Rights Reserved. Guizhou Tongda Intelligent Information
+                Technology Co., Ltd
+                <br>
+                <a href="">黔ICP备16005306号-1</a>
+                <a href="">贵公网安备 52990002000058号</a>
+                <span>| 贵州通达智慧信息技术有限公司</span>
+            </div>
+
+        </div>
+        <div class="flo">
+            <div class="sanjiao"></div>
+            <div class="sj1"></div>
+            <ul>
+                <li>
+                    <p>电话</p>
+                    <p>0815-38157660</p>
+                </li>
+                <li>
+                    <p>邮箱</p>
+                    <p>admin@tdin360.com</p>
+                </li>
+                <li>
+                    <p>QQ在线咨询</p>
+                    <p>2528363001</p>
+                </li>
+            </ul>
+
+        </div>
+        <div class="zhiding">
+
+            <div class="left4">
+                <p>联系我们</p>
+            </div>
+            <div class="right4" onclick="scrollToTop()">
+                <span>置顶</span>
+            </div>
+
+        </div>
+
+
+
+
+
+    </body>
+
+</html>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/1.index.js"></script>
+<!-- <script src="./js/navandbottom.js"></script> -->
